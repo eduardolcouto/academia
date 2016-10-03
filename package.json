@@ -1,7 +1,5 @@
 {
   "private": true,
-  "name":"academia",
-  "version":"1.0",
   "scripts": {
     "prod": "gulp --production",
     "dev": "gulp watch"
