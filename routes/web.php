@@ -11,16 +11,16 @@
 |
 */
 
-Route::get('/', function () {
+/*Route::get('/', function () {
     return view('welcome');
 });
-
-
-
+*/
 Auth::routes();
 
-Route::get('/teste',['middleware'=>'auth'],function(){
+Route::get('/', 'HomeController@index');
+
+Route::get('/teste',function(){
   return view('teste');
-});
+})->middleware('auth:api');
 
 Route::get('/home', 'HomeController@index');

@@ -9,4 +9,8 @@ class Modality extends Model
     protected $fillable = [
         'name'
     ]; 
+    
+    public function sportClasses(){
+    	return $this->hasMany(SportClass::class);
+    }
 }

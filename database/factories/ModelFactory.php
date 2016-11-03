@@ -23,8 +23,13 @@ $factory->define(App\User::class, function (Faker\Generator $faker) {
 });
 
 
-$factory->define(App\Aula::class, function (Faker\Generator $faker) {
+$factory->define(App\Modality::class, function (Faker\Generator $faker) {
 		return [
 				'name' => $faker->country
 		];
+});
+
+$factory->define(App\SportClass::class, function (Faker\Generator $faker) {
+        return [
+        ];
 });

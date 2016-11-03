@@ -10,4 +10,8 @@ class WorkoutType extends Model
     	'name',
     	'messure_id'
     ]; 
+    
+    public function messure(){
+    	return $this->belongsTo(Messure::class);
+    }
 }
